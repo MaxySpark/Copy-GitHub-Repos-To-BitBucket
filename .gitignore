@@ -167,6 +167,6 @@ typings/
 
 repo.txt
 
-out.json
+out*
 
 test*
