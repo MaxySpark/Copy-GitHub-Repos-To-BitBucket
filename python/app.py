@@ -14,8 +14,17 @@ r = requests.get('https://api.github.com/user/repos', auth=(username, password))
 # print(r)
 # print(r.json())
 # print(json.dumps(r.json()))
-
+repo_data = []
 for repo in r.json():
-    print(repo["git_url"])
+    model = {
+        "name"      : repo["name"],
+        "git_url"   : repo["git_url"],
+        "ssh_url"   : repo["ssh_url"],
+        "clone_url" : repo["clone_url"]
+    }
+    repo_data.append(model)
+    # print(repo["clone_url"])
 
 # print(json.dumps(r.json()))
+
+print(repo_data)
