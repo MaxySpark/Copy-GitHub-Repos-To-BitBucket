@@ -165,7 +165,7 @@ typings/
 # next.js build output
 .next
 
-repo.txt
+repo*.txt
 
 out*
 

@@ -30,7 +30,7 @@ request.get('https://api.github.com/user/repos', {
 
     
 
-    console.log(repo_data);
+    console.log(JSON.stringify(repo_data));
     // body.forEach(element => {
     //   console.log(element);
     // });
