@@ -64,7 +64,7 @@ def repo_select(i):
 
 def write_data_to_file(file_name,data):
     with open('outjson.json','w') as fp:
-        json.dump({ "data" : data} , fp)
+        json.dump({ "data" : data} , fp, indent=4)
 
 
 print("Choose Repositories Option : \n")
